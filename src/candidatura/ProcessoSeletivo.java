@@ -35,10 +35,16 @@ public class ProcessoSeletivo {
             candidatoAtual++;
         }
 
-        System.out.println();
+        System.out.println("Usando ForEach");
         System.out.println("Os candidatos selecionados foram:");
         for (String candidatoAceito : candidatosAceitos) {
            System.out.println(candidatoAceito);
+        }
+        System.out.println("--------------");
+        System.out.println("Usando For");
+        System.out.println("Os candidatos selecionados foram:");
+        for (int i = 0; i < candidatosAceitos.size(); i++) {
+           System.out.println("O candidato de índice: "+(i+1)+" é o candidato:"+ candidatosAceitos.get(i));
         }
         
     }
